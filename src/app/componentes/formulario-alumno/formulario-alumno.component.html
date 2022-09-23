@@ -1,0 +1,82 @@
+<p>formulario-alumno works!</p>
+
+<!-- Se crea la estructura del formulario -->
+<!-- fieldset: se organizan los campos
+     label: elemento en una interfaz
+     input: insertar información-->
+
+<fieldset>
+  <label>
+    Rut alumno:
+  </label>
+  <input type="number"
+  [value]="newAlumno.rut"
+  (input)="incluirRut($event)">
+
+  {{ newAlumno.rut }}
+
+</fieldset>
+
+<!-- /////////////////////////////////////////////////// -->
+
+<fieldset>
+  <label>
+    DV alumno:
+  </label>
+  <input type="text"
+  [value]="newAlumno.dv"
+  (input)="incluirDv($event)">
+
+  {{ newAlumno.dv }}
+
+</fieldset>
+
+<!-- /////////////////////////////////////////////////// -->
+
+<fieldset>
+  <label>
+      Nombre del alumno:
+  </label>
+  <input type="text"
+  [value]="newAlumno.nombre"
+  (input)="incluirNombre($event)">
+
+  {{ newAlumno.nombre }}
+
+</fieldset>
+
+<!-- /////////////////////////////////////////////////// -->
+
+<fieldset>
+  <label>
+      Apellido del alumno:
+  </label>
+  <input type="text"
+  [value]="newAlumno.apellido"
+  (input)="incluirApellido($event)">
+
+  {{ newAlumno.apellido }}
+
+</fieldset>
+
+<!-- /////////////////////////////////////////////////// -->
+
+<fieldset>
+  <label>
+    Edad del alumno:
+  </label>
+  <input type="text"
+  [value]="newAlumno.edad"
+  (input)="incluirEdad($event)">
+
+  {{ newAlumno.edad }}
+
+</fieldset>
+
+<!-- /////////////////////////////////////////////////// -->
+
+<fieldset>
+  <button (click)="guardar()">
+    guardar
+  </button>
+</fieldset>

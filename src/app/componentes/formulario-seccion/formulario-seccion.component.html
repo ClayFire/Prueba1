@@ -1,0 +1,30 @@
+<p>formulario-seccion works!</p>
+
+<fieldset>
+  <label>
+    Id seccion:
+  </label>
+  <input type="number"
+  [value]="newSeccion.id"
+  (input)="incluirIdSeccion($event)">
+</fieldset>
+
+<!-- ////////////////////////////////////////////////// -->
+
+
+<fieldset>
+  <label>
+    Nombre seccion:
+  </label>
+  <input type="text"
+  [value]="newSeccion.nombreSeccion"
+  (input)="incluirNombreSeccion">
+</fieldset>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<fieldset>
+  <button (click)="guardarAtribS()">
+    guardar
+  </button>
+</fieldset>
